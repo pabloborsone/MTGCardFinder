@@ -50,6 +50,7 @@ struct AsyncImage<Placeholder: View>: View {
                 Image(uiImage: loader.image!)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .frame(width: 100, height: 100, alignment: .center)
             } else {
                 placeholder
             }
