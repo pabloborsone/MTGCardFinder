@@ -15,14 +15,14 @@ struct CardList: View {
     var body: some View {
         List(card.cards) { card in
             CardRow(card: card)
-        }.onAppear {
-            fetch()
-        }.onChange(of: colorFilter.filterColor, perform: { value in
-            fetch(usingFilters: colorFilter.filterColor)
-        })
+        }
+        .onAppear { fetch() }
+        .onChange(of: colorFilter.filterColor) {
+            fetch(usingFilters: $0)
+        }
     }
     
-    private func fetch(usingFilters filters: [CardColor]? = nil) {
+    private func fetch(usingFilters filters: [CardColor] = []) {
         cardsData.fetch(usingFilters: filters) { self.card = $0 }
     }
 }

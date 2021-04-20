@@ -8,7 +8,7 @@
 import SwiftUI
 
 class Filter: ObservableObject {
-    @Published var filterColor: [CardColor]? = []
+    @Published var filterColor: [CardColor] = []
 }
 
 struct ColorView: View {
@@ -20,7 +20,7 @@ struct ColorView: View {
         Button {
             setupImage(withColor: cardColor, isHighlighted: imageOpacity == 1.0)
         } label: {
-            Image(cardColor.rawValue.lowercased() + "-mana")
+            Image(cardColor.imageName)
                 .resizable()
                 .scaledToFit()
                 .opacity(imageOpacity)
@@ -31,10 +31,10 @@ struct ColorView: View {
     private func setupImage(withColor color: CardColor, isHighlighted: Bool = false) {
         if isHighlighted {
             imageOpacity = 0.5
-            colorFilter.filterColor?.removeAll(where: { $0 == color })
+            colorFilter.filterColor.removeAll(where: { $0 == color })
         } else {
             imageOpacity = 1.0
-            colorFilter.filterColor?.append(color)
+            colorFilter.filterColor.append(color)
         }
     }
 }

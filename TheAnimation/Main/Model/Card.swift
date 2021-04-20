@@ -23,4 +23,8 @@ struct Card: Hashable, Codable {
 
 enum CardColor: String, Codable, CodingKey, CaseIterable {
     case white = "White", black = "Black", blue = "Blue", green = "Green", red = "Red"
+    
+    var imageName: String {
+        rawValue.lowercased() + "-mana"
+    }
 }
