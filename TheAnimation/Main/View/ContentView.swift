@@ -9,8 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack(alignment: .top) {
+            VStack {
+                Spacer()
+                ManaColorsView()
+                Divider()
+                CardList()
+            }
+        }
+        .environmentObject(Filter())
     }
 }
 

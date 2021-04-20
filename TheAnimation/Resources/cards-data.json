@@ -1,0 +1,314 @@
+[
+    {
+    "name": "Ancestor's Chosen",
+    "manaCost": "{5}{W}{W}",
+    "cmc": 7,
+    "colors": [
+    "White"
+    ],
+    "colorIdentity": [
+    "W"
+    ],
+    "type": "Creature — Human Cleric",
+    "types": [
+    "Creature"
+    ],
+    "subtypes": [
+    "Human",
+    "Cleric"
+    ],
+    "rarity": "Uncommon",
+    "set": "10E",
+    "setName": "Tenth Edition",
+    "text": "First strike (This creature deals combat damage before creatures without first strike.)\nWhen Ancestor's Chosen enters the battlefield, you gain 1 life for each card in your graveyard.",
+    "artist": "Pete Venters",
+    "number": "1",
+    "power": "4",
+    "toughness": "4",
+    "layout": "normal",
+    "multiverseid": "130550",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=130550&type=card",
+    "variations": [
+    "b7c19924-b4bf-56fc-aa73-f586e940bd42"
+    ],
+    "foreignNames": [
+    {
+    "name": "Ausgewählter der Ahnfrau",
+    "text": "Erstschlag (Diese Kreatur fügt Kampfschaden vor Kreaturen ohne Erstschlag zu.)\nWenn der Ausgewählte der Ahnfrau ins Spiel kommt, erhältst du 1 Lebenspunkt für jede Karte in deinem Friedhof dazu.",
+    "type": "Kreatur — Mensch, Kleriker",
+    "flavor": "„Es ist der Wille aller, und meine Hand, die ihn ausführt.\"",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148411&type=card",
+    "language": "German",
+    "multiverseid": 148411
+    },
+    {
+    "name": "Elegido de la Antepasada",
+    "text": "Daña primero. (Esta criatura hace daño de combate antes que las criaturas sin la habilidad de dañar primero.)\nCuando el Elegido de la Antepasada entre en juego, ganas 1 vida por cada carta en tu cementerio.",
+    "type": "Criatura — Clérigo humano",
+    "flavor": "\"La voluntad de todos, realizada por mi mano.\"",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=150317&type=card",
+    "language": "Spanish",
+    "multiverseid": 150317
+    },
+    {
+    "name": "Élu de l'Ancêtre",
+    "text": "Initiative (Cette créature inflige des blessures de combat avant les créatures sans l'initiative.)\nQuand l'Élu de l'Ancêtre arrive en jeu, vous gagnez 1 point de vie pour chaque carte dans votre cimetière.",
+    "type": "Créature : humain et clerc",
+    "flavor": "« La volonté de tous passe par ma main. »",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149934&type=card",
+    "language": "French",
+    "multiverseid": 149934
+    },
+    {
+    "name": "Prescelto dell'Antenata",
+    "text": "Attacco improvviso (Questa creatura infligge danno da combattimento prima delle creature senza attacco improvviso.)\nQuando il Prescelto dell'Antenata entra in gioco, guadagni 1 punto vita per ogni carta nel tuo cimitero.",
+    "type": "Creatura — Chierico Umano",
+    "flavor": "\"La volontà di tutti, eseguita per mano mia.\"",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148794&type=card",
+    "language": "Italian",
+    "multiverseid": 148794
+    },
+    {
+    "name": "祖神に選ばれし者",
+    "text": "先制攻撃 （このクリーチャーは先制攻撃を持たないクリーチャーよりも先に戦闘ダメージを与える。）\n祖神に選ばれし者が場に出たとき、あなたはあなたの墓地にあるカード１枚につき１点のライフを得る。",
+    "type": "クリーチャー — 人間・クレリック",
+    "flavor": "すべての意思を、この手で成そう。",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148028&type=card",
+    "language": "Japanese",
+    "multiverseid": 148028
+    },
+    {
+    "name": "Eleito da Ancestral",
+    "text": "Iniciativa (Esta criatura causa dano de combate antes de criaturas sem a habilidade de iniciativa.)\nQuando Eleito da Ancestral entra em jogo, você ganha 1 ponto de vida para cada card em seu cemitério.",
+    "type": "Criatura — Humano Clérigo",
+    "flavor": "\"A vontade de todos pelas minhas mãos realizada.\"",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149551&type=card",
+    "language": "Portuguese (Brazil)",
+    "multiverseid": 149551
+    },
+    {
+    "name": "Избранник Прародителя",
+    "text": "Первый удар (Это существо наносит боевые повреждения раньше существ без Первого удара.)\nКогда Избранник Прародителя входит в игру, вы получаете 1 жизнь за каждую карту на вашем кладбище.",
+    "type": "Существо — Человек Священник",
+    "flavor": "\"Общая воля моей рукой вершится\".",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149168&type=card",
+    "language": "Russian",
+    "multiverseid": 149168
+    },
+    {
+    "name": "祖灵的爱民",
+    "text": "先攻（此生物会比不具先攻异能的生物提前造成战斗伤害。）\n当祖灵的爱民进场时，你坟墓场中每有一张牌，你便获得1点生命。",
+    "type": "生物～人类／僧侣",
+    "flavor": "「众生所愿，吾手所圆。」",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=147645&type=card",
+    "language": "Chinese Simplified",
+    "multiverseid": 147645
+    }
+    ],
+    "printings": [
+    "10E",
+    "JUD",
+    "UMA"
+    ],
+    "originalText": "First strike (This creature deals combat damage before creatures without first strike.)\nWhen Ancestor's Chosen comes into play, you gain 1 life for each card in your graveyard.",
+    "originalType": "Creature - Human Cleric",
+    "legalities": [
+    {
+    "format": "Commander",
+    "legality": "Legal"
+    },
+    {
+    "format": "Duel",
+    "legality": "Legal"
+    },
+    {
+    "format": "Legacy",
+    "legality": "Legal"
+    },
+    {
+    "format": "Modern",
+    "legality": "Legal"
+    },
+    {
+    "format": "Penny",
+    "legality": "Legal"
+    },
+    {
+    "format": "Premodern",
+    "legality": "Legal"
+    },
+    {
+    "format": "Vintage",
+    "legality": "Legal"
+    }
+    ],
+    "id": "5f8287b1-5bb6-5f4c-ad17-316a40d5bb0c"
+    },
+    {
+    "name": "Angel of Mercy",
+    "manaCost": "{4}{W}",
+    "cmc": 5,
+    "colors": [
+    "White"
+    ],
+    "colorIdentity": [
+    "W"
+    ],
+    "type": "Creature — Angel",
+    "types": [
+    "Creature"
+    ],
+    "subtypes": [
+    "Angel"
+    ],
+    "rarity": "Uncommon",
+    "set": "10E",
+    "setName": "Tenth Edition",
+    "text": "Flying\nWhen Angel of Mercy enters the battlefield, you gain 3 life.",
+    "flavor": "Every tear shed is a drop of immortality.",
+    "artist": "Volkan Baǵa",
+    "number": "2",
+    "power": "3",
+    "toughness": "3",
+    "layout": "normal",
+    "multiverseid": "129465",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=129465&type=card",
+    "variations": [
+    "8fd4e2eb-3eb4-50ea-856b-ef638fa47f8a"
+    ],
+    "foreignNames": [
+    {
+    "name": "Engel der Gnade",
+    "text": "Fliegend (Diese Kreatur kann außer von fliegenden Kreaturen und Kreaturen mit Reichweite nicht geblockt werden.)\nWenn der Engel der Gnade ins Spiel kommt, erhältst du 3 Lebenspunkte dazu.",
+    "type": "Kreatur — Engel",
+    "flavor": "Jede ihrer Tränen ist ein Tropfen Unsterblichkeit.",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148412&type=card",
+    "language": "German",
+    "multiverseid": 148412
+    },
+    {
+    "name": "Ángel de piedad",
+    "text": "Vuela. (Esta criatura no puede ser bloqueada excepto por criaturas que tengan la habilidad de volar o alcance.)\nCuando el Ángel de piedad entre en juego, gana 3 vidas.",
+    "type": "Criatura — Ángel",
+    "flavor": "Cada lágrima derramada es una gota de inmortalidad.",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=150318&type=card",
+    "language": "Spanish",
+    "multiverseid": 150318
+    },
+    {
+    "name": "Ange de miséricorde",
+    "text": "Vol (Cette créature ne peut être bloquée que par des créatures avec le vol ou la portée.)\nQuand l'Ange de miséricorde arrive en jeu, vous gagnez 3 points de vie.",
+    "type": "Créature : ange",
+    "flavor": "Chaque larme versée est une goutte d'immortalité.",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149935&type=card",
+    "language": "French",
+    "multiverseid": 149935
+    },
+    {
+    "name": "Angelo della Misericordia",
+    "text": "Volare (Questa creatura non può essere bloccata tranne che da creature con volare o raggiungere.)\nQuando l'Angelo della Misericordia entra in gioco, guadagni 3 punti vita.",
+    "type": "Creatura — Angelo",
+    "flavor": "Ogni lacrima versata è una goccia d'immortalità.",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148795&type=card",
+    "language": "Italian",
+    "multiverseid": 148795
+    },
+    {
+    "name": "慈悲の天使",
+    "text": "飛行 （このクリーチャーは飛行や到達を持たないクリーチャーによってブロックされない。）\n慈悲の天使が場に出たとき、あなたは３点のライフを得る。",
+    "type": "クリーチャー — 天使",
+    "flavor": "流す涙は不死の滴。",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=148029&type=card",
+    "language": "Japanese",
+    "multiverseid": 148029
+    },
+    {
+    "name": "Anjo de Misericórdia",
+    "text": "Voar (Esta criatura só pode ser bloqueada por criaturas com a habilidade de voar ou alcance.)\nQuando Anjo de Misericórdia entra em jogo, você ganha 3 pontos de vida.",
+    "type": "Criatura — Anjo",
+    "flavor": "Cada lágrima derramada é uma gota de imortalidade.",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149552&type=card",
+    "language": "Portuguese (Brazil)",
+    "multiverseid": 149552
+    },
+    {
+    "name": "Ангел Милосердия",
+    "text": "Полет (Это существо может быть заблокировано только существом с Полетом или Захватом.)\nКогда Ангел Милосердия входит в игру, вы получаете 3 жизни.",
+    "type": "Существо — Ангел",
+    "flavor": "Каждая пролитая слеза это капля бессмертия.",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=149169&type=card",
+    "language": "Russian",
+    "multiverseid": 149169
+    },
+    {
+    "name": "慈悲天使",
+    "text": "飞行（只有具飞行或延势异能的生物才能阻挡它。）\n当慈悲天使进场时，你获得3点生命。",
+    "type": "生物～天使",
+    "flavor": "每颗泪珠都是一滴不朽。",
+    "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=147646&type=card",
+    "language": "Chinese Simplified",
+    "multiverseid": 147646
+    }
+    ],
+    "printings": [
+    "10E",
+    "8ED",
+    "9ED",
+    "DDC",
+    "DVD",
+    "IMA",
+    "INV",
+    "JMP",
+    "MB1",
+    "P02",
+    "PS11",
+    "PSAL",
+    "S99"
+    ],
+    "originalText": "Flying (This creature can't be blocked except by creatures with flying or reach.)\nWhen Angel of Mercy comes into play, you gain 3 life.",
+    "originalType": "Creature - Angel",
+    "legalities": [
+    {
+    "format": "Commander",
+    "legality": "Legal"
+    },
+    {
+    "format": "Duel",
+    "legality": "Legal"
+    },
+    {
+    "format": "Gladiator",
+    "legality": "Legal"
+    },
+    {
+    "format": "Historic",
+    "legality": "Legal"
+    },
+    {
+    "format": "Legacy",
+    "legality": "Legal"
+    },
+    {
+    "format": "Modern",
+    "legality": "Legal"
+    },
+    {
+    "format": "Pauper",
+    "legality": "Legal"
+    },
+    {
+    "format": "Penny",
+    "legality": "Legal"
+    },
+    {
+    "format": "Premodern",
+    "legality": "Legal"
+    },
+    {
+    "format": "Vintage",
+    "legality": "Legal"
+    }
+    ],
+    "id": "57aaebc1-850c-503d-9f6e-bb8d00d8bf7c"
+    }
+]
