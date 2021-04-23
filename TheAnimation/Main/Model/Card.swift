@@ -11,10 +11,9 @@ struct CardValues: Hashable, Codable, Identifiable {
     let id: String
     let name: String
     let type: String
-    let subtypes: [String]?
-    let cmc: Float
     let colors: [CardColor]
     let imageUrl: URL?
+    let text: String?
 }
 
 struct Card: Hashable, Codable {

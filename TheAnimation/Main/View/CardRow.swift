@@ -15,7 +15,7 @@ struct CardRow: View {
         HStack {
             AsyncImage(url: card.imageUrl ?? defaultUrl,
                        placeholder: { ProgressView() })
-                .frame(width: 50)
+                .frame(width: 100, height: 100, alignment: .center)
                 .padding()
             VStack(alignment: .leading) {
                 Text(card.name)
@@ -23,19 +23,12 @@ struct CardRow: View {
                 Text(card.type)
                     .font(.subheadline)
             }
-            Spacer()
-            VStack(alignment: .trailing) {
-                ForEach(card.colors, id: \.self) { color in
-                    ColorView(cardColor: color)
-                        .frame(width: 25, height: 25, alignment: .center)
-                }
-            }
         }
     }
 }
 
 struct CardRow_Previews: PreviewProvider {
     static var previews: some View {
-        CardRow(card: CardValues(id: "1", name: "Liliana Vess", type: "Creature - Demon", subtypes: ["Demon", "Angel"], cmc: 0.0, colors: [.black], imageUrl: URL(fileURLWithPath: "")))
+        CardRow(card: CardValues(id: "1", name: "Liliana Vess", type: "Creature - Demon", colors: [.black], imageUrl: URL(fileURLWithPath: ""), text: "I destroy everyone who dares to stand in my way"))
     }
 }

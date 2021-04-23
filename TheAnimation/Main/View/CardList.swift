@@ -13,12 +13,18 @@ struct CardList: View {
     @EnvironmentObject var colorFilter: Filter
     
     var body: some View {
-        List(card.cards) { card in
-            CardRow(card: card)
-        }
-        .onAppear { fetch() }
-        .onChange(of: colorFilter.filterColor) {
-            fetch(usingFilters: $0)
+        NavigationView {
+            List(card.cards) { card in
+                NavigationLink(destination: DetailView(card: card)) {
+                    CardRow(card: card)
+                }
+            }
+            .onAppear { fetch() }
+            .onChange(of: colorFilter.filterColor) {
+                fetch(usingFilters: $0)
+            }
+            .navigationBarTitle("Cards")
+            .navigationBarHidden(false)
         }
     }
     
