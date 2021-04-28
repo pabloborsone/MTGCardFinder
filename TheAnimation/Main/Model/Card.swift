@@ -11,20 +11,30 @@ struct CardValues: Hashable, Codable, Identifiable {
     let id: String
     let name: String
     let type: String
-    let subtypes: [String]?
-    let cmc: Float
-    let colors: [CardColor]
+    let colors: [CardColor]?
     let imageUrl: URL?
+    let text: String?
 }
 
 struct Card: Hashable, Codable {
-    let cards: [CardValues]
+    var cards: [CardValues]
 }
 
 enum CardColor: String, Codable, CodingKey, CaseIterable {
-    case white = "White", black = "Black", blue = "Blue", green = "Green", red = "Red"
+    case white, black, blue, green, red
     
     var imageName: String {
         rawValue.lowercased() + "-mana"
+    }
+    
+    init(from decoder: Decoder) throws {
+        do {
+            let container = try decoder.singleValueContainer()
+            let color = try container.decode(String.self)
+            self = CardColor(rawValue: color.lowercased())!
+        } catch {
+            print(error)
+            self = CardColor(rawValue: "white")!
+        }
     }
 }

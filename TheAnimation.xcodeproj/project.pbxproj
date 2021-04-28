@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CD3ED75B2624698E00F495F7 /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3ED75A2624698E00F495F7 /* CardList.swift */; };
+		CD4B2BC42632EABB00504093 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4B2BC32632EABB00504093 /* DetailView.swift */; };
+		CD4B2BCD2632FBB900504093 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4B2BCC2632FBB900504093 /* ImageCache.swift */; };
+		CD4B2BD52632FD6A00504093 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4B2BD42632FD6A00504093 /* ImageModel.swift */; };
 		CD6181F42629CB0100526FE9 /* ManaColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6181F32629CB0100526FE9 /* ManaColorsView.swift */; };
 		CD6181FC2629CCEB00526FE9 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6181FB2629CCEB00526FE9 /* ColorView.swift */; };
 		CD6182022629F03600526FE9 /* ManaButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6182012629F03600526FE9 /* ManaButtonStyle.swift */; };
@@ -46,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		CD3ED75A2624698E00F495F7 /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
+		CD4B2BC32632EABB00504093 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CD4B2BCC2632FBB900504093 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		CD4B2BD42632FD6A00504093 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		CD6181F32629CB0100526FE9 /* ManaColorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManaColorsView.swift; sourceTree = "<group>"; };
 		CD6181FB2629CCEB00526FE9 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		CD6182012629F03600526FE9 /* ManaButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManaButtonStyle.swift; sourceTree = "<group>"; };
@@ -95,6 +101,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD4B2BC22632EAA600504093 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				CD4B2BC32632EABB00504093 /* DetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		CD4B2BCB2632FB9D00504093 /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				CD4B2BCC2632FBB900504093 /* ImageCache.swift */,
+				CD4B2BD42632FD6A00504093 /* ImageModel.swift */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
 		CD6181F12629CADC00526FE9 /* ManaColors */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,8 +168,10 @@
 		CDCDE64F261F465A00469D7E /* TheAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				CD4B2BC22632EAA600504093 /* DetailView */,
 				CD6181F12629CADC00526FE9 /* ManaColors */,
 				CDCDE69F261F72CD00469D7E /* Main */,
+				CD4B2BCB2632FB9D00504093 /* ImageCache */,
 				CDCDE685261F46BA00469D7E /* Resources */,
 				CDCDE684261F46AD00469D7E /* LaunchScreen */,
 				CDCDE683261F469700469D7E /* Delegates */,
@@ -376,16 +401,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDB2F270262F0DF3009A02A3 /* AppDelegate.swift in Sources */,
+				CD4B2BD52632FD6A00504093 /* ImageModel.swift in Sources */,
 				CDCDE6A4261F732100469D7E /* Card.swift in Sources */,
 				CD6181FC2629CCEB00526FE9 /* ColorView.swift in Sources */,
 				CDCDE6B4261F852600469D7E /* CardRow.swift in Sources */,
 				CDCDE653261F465A00469D7E /* SceneDelegate.swift in Sources */,
 				CD7B2A302620B61600DD1865 /* ImageLoader.swift in Sources */,
 				CDCDE6AC261F7AF100469D7E /* CardsData.swift in Sources */,
+				CD4B2BC42632EABB00504093 /* DetailView.swift in Sources */,
 				CD3ED75B2624698E00F495F7 /* CardList.swift in Sources */,
 				CDCDE655261F465A00469D7E /* ContentView.swift in Sources */,
 				CD6182022629F03600526FE9 /* ManaButtonStyle.swift in Sources */,
 				CD7B2A2026207AEA00DD1865 /* cards-data.json in Sources */,
+				CD4B2BCD2632FBB900504093 /* ImageCache.swift in Sources */,
 				CD6181F42629CB0100526FE9 /* ManaColorsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,22 +8,25 @@
 import SwiftUI
 
 struct CardList: View {
-    @State var card = Card(cards: [])
-    let cardsData = CardsData()
+    @StateObject var cardData = CardsData()
     @EnvironmentObject var colorFilter: Filter
     
     var body: some View {
-        List(card.cards) { card in
-            CardRow(card: card)
+        NavigationView {
+            List(cardData.card.cards) { card in
+                NavigationLink(destination: DetailView(card: card)) {
+                    CardRow(card: card)
+                        .onAppear { cardData.loadMoreContentIfNeeded(currentItem: card) }
+                }
+            }
+            .navigationTitle("Cards")
+            .navigationBarHidden(false)
         }
-        .onAppear { fetch() }
-        .onChange(of: colorFilter.filterColor) {
-            fetch(usingFilters: $0)
+        if cardData.isLoadingPage {
+            ProgressView()
+                .progressViewStyle(CircularProgressViewStyle(tint: .orange))
+                
         }
-    }
-    
-    private func fetch(usingFilters filters: [CardColor] = []) {
-        cardsData.fetch(usingFilters: filters) { self.card = $0 }
     }
 }
 

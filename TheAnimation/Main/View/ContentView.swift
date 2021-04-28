@@ -11,9 +11,9 @@ struct ContentView: View {
     var body: some View {
         ZStack(alignment: .top) {
             VStack {
-                Spacer()
-                ManaColorsView()
-                Divider()
+//                Spacer()
+//                ManaColorsView()
+//                Divider()
                 CardList()
             }
         }

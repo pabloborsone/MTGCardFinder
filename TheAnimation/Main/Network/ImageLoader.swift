@@ -19,12 +19,22 @@ class ImageLoader: ObservableObject {
     }
     
     func load() {
-        cancellable = URLSession.shared.dataTaskPublisher(for: url)
-            .map { UIImage(data: $0.data) }
-            .replaceError(with: nil)
-            .receive(on: DispatchQueue.main)
-            .sink { [weak self] in self?.image = $0 }
+        let imageModel = ImageModel(urlString: url.absoluteString)
+        if let image = imageModel.cacheImage.get(forKey: url.absoluteString) {
+            self.image = image
+        } else {
+            cancellable = URLSession.shared.dataTaskPublisher(for: url)
+                .map { UIImage(data: $0.data) }
+                .replaceError(with: nil)
+                .receive(on: DispatchQueue.main)
+                .sink { [weak self] in
+                    guard let self = self else { return }
+                    self.image = $0
+                    imageModel.cacheImage.set(forKey: self.url.absoluteString, image: $0 ?? UIImage())
+                }
+        }
     }
+    
     func cancel() {
         cancellable?.cancel()
     }
@@ -33,9 +43,12 @@ class ImageLoader: ObservableObject {
 struct AsyncImage<Placeholder: View>: View {
     @StateObject private var loader: ImageLoader
     private let placeholder: Placeholder
+    private let url: URL
+    private lazy var imageModel = ImageModel(urlString: url.absoluteString)
     
     init(url: URL, @ViewBuilder placeholder: () -> Placeholder) {
         self.placeholder = placeholder()
+        self.url = url
         _loader = StateObject(wrappedValue: ImageLoader(url: url))
     }
     
